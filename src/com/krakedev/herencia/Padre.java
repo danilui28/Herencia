@@ -4,6 +4,7 @@ public class Padre {
 
 	private int virtudes;
 	private int defectos;
+	private double totalAhorrado;
 	
 	public int getVirtudes() {
 		return virtudes;
@@ -22,14 +23,26 @@ public class Padre {
 	}
 	
 
+	public double getTotalAhorrado() {
+		return totalAhorrado;
+	}
+
+	public void setTotalAhorrado(double totalAhorrado) {
+		this.totalAhorrado = totalAhorrado;
+	}
+
 	public Padre(int virtudes, int defectos) {
 		this.virtudes = virtudes;
 		this.defectos = defectos;
+		this.totalAhorrado = 0;
 	}
 	
+	public void ahorrar(double monto){
+		totalAhorrado += monto;
+	}
 	
 	public String toString() {
-		return "virtudes= " + virtudes + ", defectos= " + defectos;
+		return "virtudes= " + virtudes + ", defectos= " + defectos + ", total ahorrado= " + totalAhorrado;
 	}
 
 }

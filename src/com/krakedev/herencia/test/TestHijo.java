@@ -8,6 +8,7 @@ public class TestHijo {
         Hijo hijo = new Hijo(5, 2, 10);
 
         System.out.println(hijo);
+        hijo.toString();
 	}
 
 }
