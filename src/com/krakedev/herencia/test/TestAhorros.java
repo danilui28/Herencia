@@ -9,15 +9,15 @@ public class TestAhorros {
 	public static void main(String[] args) {
 		Padre padre = new Padre(5, 2);
 		padre.ahorrar(1000);
-		System.out.println(padre);
+		System.out.println("Padre: " + padre);
 
 		Hija hija = new Hija("Maria", 5, 2);
 		hija.ahorrar(1000);
-		System.out.println(hija);
+		System.out.println("Hija: " + hija);
 		
 		Hijo hijo = new Hijo(5, 2, 10);
 		hijo.ahorrar(1000);
-		System.out.println(hijo);
+		System.out.println("Hijo: " + hijo);
 	
 	}
 
