@@ -3,7 +3,7 @@ package com.krakedev.herencia;
 public class Hija extends Padre {
 
 	public Hija(String nombre, int virtudes, int defectos) {
-		super(virtudes, defectos);
+		super(nombre, virtudes, defectos);
 	}
 	
 	public void escucharBadBunny() {
